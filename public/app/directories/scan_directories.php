@@ -23,7 +23,7 @@ function scanFolders($dir){
     return $dirs;
     //echo "<pre>".print_r($list, true)."</pre>";
 }
-$dirs = scanFolders($library);
+$dirs = scanFolders($root.$library);
 if($dynamic_dir_scan === true){
     echo json_encode($dirs);
 }else{

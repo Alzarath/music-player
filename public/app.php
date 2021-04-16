@@ -3,7 +3,7 @@ require_once dirname(__FILE__)."/../config.php";
 
 $public = array(
     "host" => $host,
-    "library" => "library",
+    "library" => $library,
     "server" => $host."public/",
     "musicPlayer" => $music_player
 );

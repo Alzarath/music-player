@@ -12,7 +12,7 @@ if($get_dir===false){
     error_message();
 }
 
-$request_dir = $library.$get_dir;
+$request_dir = $root.$library.$get_dir;
 if(realpath($request_dir)===false){
     error_message();
 }
