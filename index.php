@@ -21,13 +21,8 @@ require_once "config.php";
         <script type="text/javascript" src="./public/app/js/app.js"></script>
         <script type="text/javascript" src="./public/app/js/controllers.js"></script>
 	<script type="text/javascript" src="./public/app/js/filters.js"></script>
-	<script type="text/javascript">
-	function run(){
-		document.getElementById('albums').style.height=window.innerHeight+'px';
-	}
-	</script>
     </head>
-<body onload="run()" ng-controller="DirectoriesList">
+<body ng-controller="DirectoriesList">
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span4" id="albums">

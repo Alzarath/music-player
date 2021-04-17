@@ -4,7 +4,7 @@ body, html, .container-fluid{
 .link{ cursor: pointer; color:#0000E9; }
 .link:hover{text-decoration: underline;}
 
-#albums{ overflow: auto; height:800px;}
+#albums{ overflow: auto; height:800px; height:100vh; }
 #albums .album{ padding-left:15px; cursor: pointer; color:#0000E9; }
 
 #center{ height: 100%; overflow: auto;}
