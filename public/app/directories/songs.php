@@ -26,8 +26,10 @@ if(!is_readable($request_dir)){
 }
 $return = array();
 $list = scandir($request_dir);
+$validExts = array("mp3", "wav", "flac", "m4a", "ogg", "opus", "oga", "mp4", "webm")
 foreach($list as $file){
-    if(!is_dir($request_dir.$file) && strstr($file, ".mp3")){
+    $ext = array_pop(preg_split("/\./", $file));
+    if(!is_dir($request_dir.$file) && in_array($ext, $validExts)){
         $return[] = array(
             "image" => "./public/img/default.png",
             "name" => $file,
